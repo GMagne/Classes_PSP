@@ -2,8 +2,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.printf("Hello and welcome!\n");
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
+        int a[] = {0,1,2,3,4,5};
+
+        for (int i = a.length; i-->0 ; ) {
+            System.out.println("i = " + a[i]);
         }
     }
 }
