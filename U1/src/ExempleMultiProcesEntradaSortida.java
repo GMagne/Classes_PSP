@@ -10,7 +10,7 @@ public class ExempleMultiProcesEntradaSortida {
     final static String[] command = {
             "java",
             "-jar",
-            ""
+            "C:\\Users\\34667\\Desktop\\GS_DAM\\PPS\\ExempleRunTime\\out\\artifacts\\ExempleRunTime_jar\\ExempleRunTime.jar"
     };
 
     public static void main(String[] args) {
