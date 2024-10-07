@@ -2,9 +2,9 @@ import java.io.File;
 
 public class Lanzador {
     public void execSuma(String n1,String n2){
-        String comando = "U1/ExempleProcess/src/Sumador.java";
+        String ruta = "U1/ExempleProcess/src/Sumador.java";
         try{
-            ProcessBuilder pb = new ProcessBuilder("java", comando, n1, n2);
+            ProcessBuilder pb = new ProcessBuilder("java", ruta, n1, n2); // "java U1/ExempleProcess/src/Sumador.java arg1 arg2"
             pb.redirectOutput(ProcessBuilder.Redirect.INHERIT);
             pb.redirectError(new File("U1/ExempleProcess/src/errors1.txt"));
             pb.start();
