@@ -9,8 +9,7 @@ public class ExempleMultiProcesEntradaSortida {
 
     final static String[] command = {
             "java",
-            "-jar",
-            "C:\\Users\\34667\\Desktop\\GS_DAM\\PPS\\ExempleRunTime\\out\\artifacts\\ExempleRunTime_jar\\ExempleRunTime.jar"
+            "C:\\Users\\34667\\Desktop\\GS_DAM\\PPS\\Classes_PSP\\U1\\src\\ExemplesMultiprocesEntradaSortida_recursos.java"
     };
 
     public static void main(String[] args) {

@@ -1,19 +1,10 @@
 public class Sumador {
-    public int sumar(int n1, int n2){
+    public static int sumar(int n1, int n2){
         int resultat = 0;
         for(int i = n1; i<=n2; i++){
             resultat += i; // resultat = resultat + i;
         }
         return resultat;
-    }
-
-    public static void main(String[] args){
-        Sumador s = new Sumador();
-        int n1 = Integer.parseInt(args[0]);
-        int n2 = Integer.parseInt(args[1]);
-
-        int resultat = s.sumar(n1,n2);
-        System.out.println( resultat );
     }
 
 }
