@@ -3,12 +3,14 @@ import java.io.File;
 
 public class ExerciciMultiproces1 {
     public void lanzar(int n){
-        String ruta = "ParellSenar.java";
+        String dirPath = "./out\\production\\Ex1";
+        String fileName = "ParellSenar";
         try{
-            ProcessBuilder pb = new ProcessBuilder("java", ruta, String.valueOf(n));
-            pb.directory(new File("C:\\Users\\34667\\Desktop\\GS_DAM\\PPS\\Classes_PSP\\U1\\Ex1\\src"));
+            ProcessBuilder pb = new ProcessBuilder("java", fileName, String.valueOf(n));
+            pb.directory(new File(dirPath));
             pb.redirectOutput(ProcessBuilder.Redirect.INHERIT);
-            pb.start();
+            Process p = pb.start();
+            p.waitFor();
         } catch (Exception e){
             e.printStackTrace();
         }

@@ -18,12 +18,12 @@ public class ReadWriteFile{
 
     public static void main(String[] args){
 
-        String filePath = args[0];
+        String filePath = args[0]; // 'HolaFitxer.txt'
 
         PrintWriter pw = null;
         try{
             pw = getPrintWriter(filePath);
-            pw.println("Hola");
+            pw.println("Hola \n Adeu");
         } catch (IOException e){
             e.printStackTrace();
         }finally {
@@ -38,5 +38,4 @@ public class ReadWriteFile{
         }
 
     }
-
 }
