@@ -9,7 +9,7 @@ public class Main {
             recurs.setNoAutoritzat();
         });
 
-        fil2.start();
         fil1.start();
+        fil2.start();
     }
 }

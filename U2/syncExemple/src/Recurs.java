@@ -2,18 +2,12 @@ public class Recurs {
 
     private boolean autoritzat = true;
 
-    public synchronized void setNoAutoritzat(){
-        try {
-            System.out.println("Comença sleep.");
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }//*/
+    synchronized public void setNoAutoritzat(){
         autoritzat = false;
         System.out.println("Set: accés al recurs no autoritzat");
     }
 
-    synchronized public void acces(){
+    public synchronized void acces(){
         if (autoritzat){
             try {
                 System.out.println("Comença sleep.");
