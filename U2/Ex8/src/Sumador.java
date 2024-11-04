@@ -13,6 +13,9 @@ public class Sumador extends Thread{
         valor = valor + 1;
         comptador.setCompte(valor);
         System.out.println(this.getName() + " - El valor del comptador és: " +comptador.getCompte());
+        try {
+            Thread.sleep(0);
+        } catch (InterruptedException e) {}
         semafor.unlock();
     }
 }

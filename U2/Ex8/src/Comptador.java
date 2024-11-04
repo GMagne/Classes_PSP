@@ -1,5 +1,5 @@
 public class Comptador {
-    int compte;
+    private int compte;
 
     public Comptador(){
         compte = 0;
