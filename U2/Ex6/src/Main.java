@@ -1,7 +1,10 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
+        GenPrincipal fil1 = new GenPrincipal();
+        GenSecundari fil2 = new GenSecundari(fil1);
+
+        fil1.start();
+        fil2.start();
     }
 }
