@@ -18,13 +18,13 @@ public class Main {
 
     private static void enviar(Process proces, String n) throws IOException {
         OutputStream outS = proces.getOutputStream();
-        OutputStreamWriter outSW = new OutputStreamWriter(outS);    // Esto convierte la info en bytes para poderla enviar
-        BufferedWriter outBW = new BufferedWriter(outSW);           // Esto pues agiliza un poco las cosas
+        OutputStreamWriter outSW = new OutputStreamWriter(outS);
+        BufferedWriter outBW = new BufferedWriter(outSW);
 
         outBW.write(n);
         outBW.newLine();
-        outBW.flush();              // guarda la info
-        outBW.close();              // si no pones close, esto se queda ahi abierto dando por saco
+        outBW.flush();
+        outBW.close();
     }
 
     private static List<String> llegir(Process proces) throws IOException {
